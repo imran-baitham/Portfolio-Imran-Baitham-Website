@@ -10,27 +10,15 @@ closetheme.addEventListener("click", () => {
 });
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/
-// const scrollHeader = () => {
-//   const header = document.querySelector("#header");
-//   if (this.scrollY >= 50) {
-//     header.classList.add("scrool__header");
-//   } else {
-//     header.classList.remove("scrool__header");
-//   }
-// };
-// window.addEventListener("scrool", scrollHeader);
-
-// function myFunction() {
-//   const header = document.querySelector("#header");
-//   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-//     header.className.add("scrool__header");
-//   } else {
-//     header.classList.remove("scrool__header");
-//   }
-// }
-// window.onscroll = function () {
-//   myFunction();
-// };
+const scrollHeader = () => {
+  const header = document.getElementById("header");
+  if (this.scrollY >= 50) {
+    header.classList.add("scrool__header");
+  } else {
+    header.classList.remove("scrool__header");
+  }
+};
+window.addEventListener("scroll", scrollHeader);
 
 /*=============== SERVICES MODAL ===============*/
 
@@ -212,7 +200,7 @@ const updateClock = () => {
   ];
   const values = [week[dname], months[mo], dnum + "th"];
   for (let i = 0; i < ids.length; i++) {
-    document.getElementById(ids[i]).firstChild.nodeValue = values[i];
+    // document.getElementById(ids[i]).firstChild.nodeValue = values[i];
   }
 };
 

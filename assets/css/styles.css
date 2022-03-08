@@ -156,7 +156,8 @@ body.light-theme {
 ==========*/
 
 .light-theme .scrool__header {
-  box-shadow: 0 4px 4px hsla(0, 100%, 50%, 0.3);
+  box-shadow: 0 2px 4px hsla(0, 1%, 1%, 0.1);
+  border-bottom: 0.1px solid rgb(19 47 76);
 }
 .light-theme .nav__menu {
   background-color: hsla(var(--second-hue), 32%, 90%, 0.8);
@@ -250,8 +251,12 @@ header {
   background-color: var(--body-color);
   z-index: var(--z-fixed);
   transition: 0.4s; /* for light mode animation */
-  box-shadow: rgb(19 47 76) 0px -1px 1px inset;
-  /* background-color: rgba(10, 25, 41, 0.72); */
+  /* box-shadow: rgb(19 47 76) 0px -1px 1px inset; */
+
+  /* white shadow */
+  /* box-shadow: 0 2px 4px hsla(0, 1%, 1%, 0.1); */
+  /* Black shadow */
+  /* box-shadow: 0 4px 4px hsla(0, 0%, 4%, 0.3); */
 }
 .nav {
   height: var(--header-height);
@@ -345,7 +350,8 @@ header {
 /* Change background header */
 
 .scrool__header {
-  box-shadow: 0 4px 4px hsla(0, 100%, 50%, 0.3);
+  box-shadow: 0 4px 4px hsla(0, 0%, 4%, 0.3);
+  border-bottom: 0.1px solid rgb(19 47 76);
 }
 /* =============== Icons-Animation ===================== */
 @keyframes homeIcon {
