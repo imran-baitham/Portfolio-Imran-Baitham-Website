@@ -91,7 +91,7 @@ input,
 textarea {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  user-select: none;
+  /* user-select: none; */
 }
 
 body {
@@ -251,12 +251,7 @@ header {
   background-color: var(--body-color);
   z-index: var(--z-fixed);
   transition: 0.4s; /* for light mode animation */
-  /* box-shadow: rgb(19 47 76) 0px -1px 1px inset; */
-
-  /* white shadow */
-  /* box-shadow: 0 2px 4px hsla(0, 1%, 1%, 0.1); */
-  /* Black shadow */
-  /* box-shadow: 0 4px 4px hsla(0, 0%, 4%, 0.3); */
+  box-shadow: none;
 }
 .nav {
   height: var(--header-height);
@@ -334,24 +329,10 @@ header {
   justify-content: center;
   align-items: center;
 }
-/* Active link */
-.active__link {
-  /* background-image: linear-gradient(
-    180deg,
-    hsla(var(--first-hue), var(--sat), var(--lig), 1),
-    hsla(var(--first-hue), var(--sat), var(--lig), 0.2)
-    );
-    box-sizing: 0 0 16px hsla(var(--first-hue), var(--sat), var(--lig), 0.4);
-    color: var(--first-hue);
-    /* line-height: 20px; */
-  /* text-decoration: underline red; */
-  /* margin-top: 10%; */
-}
-/* Change background header */
 
+/* ==========  header shadow ==================*/
 .scrool__header {
-  box-shadow: 0 4px 4px hsla(0, 0%, 4%, 0.3);
-  border-bottom: 0.1px solid rgb(19 47 76);
+  box-shadow: rgb(19 47 76) 0px -1px 1px inset;
 }
 /* =============== Icons-Animation ===================== */
 @keyframes homeIcon {
@@ -651,11 +632,12 @@ header {
   cursor: pointer;
 }
 
-/*Active modal*/
+/*=========== Active modal ==============*/
 .active-modal {
   visibility: visible;
   opacity: 1;
 }
+
 /*=============== WORK ===============*/
 .work__container {
   padding-top: 1rem;

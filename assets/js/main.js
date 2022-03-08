@@ -88,8 +88,8 @@ let swiperTestimonial = new Swiper(".testimonial__container", {
 });
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
-// const sections = document.querySelectorAll("section[id]");
 
+// const sections = document.querySelectorAll("section[id]");
 // function scroolActive() {
 //   const scrollY = window.pageYOffset;
 
@@ -110,6 +110,24 @@ let swiperTestimonial = new Swiper(".testimonial__container", {
 //   });
 // }
 // window, addEventListener("scroll", scroolActive);
+
+// Html
+// <!-- <a href="#home" class="nav__link active__link"> -->
+// Css
+/* Active link */
+// .active__link {
+//   /* background-image: linear-gradient(
+//     180deg,
+//     hsla(var(--first-hue), var(--sat), var(--lig), 1),
+//     hsla(var(--first-hue), var(--sat), var(--lig), 0.2)
+//     );
+//     box-sizing: 0 0 16px hsla(var(--first-hue), var(--sat), var(--lig), 0.4);
+//     color: var(--first-hue);
+//     /* line-height: 20px; */
+//   /* text-decoration: underline red; */
+//   /* margin-top: 10%; */
+// }
+
 /*=============== LIGHT THEME ===============*/
 const themeButton = document.getElementById("theme-button");
 
@@ -200,7 +218,7 @@ const updateClock = () => {
   ];
   const values = [week[dname], months[mo], dnum + "th"];
   for (let i = 0; i < ids.length; i++) {
-    // document.getElementById(ids[i]).firstChild.nodeValue = values[i];
+    document.getElementById(ids[i]).firstChild.nodeValue = values[i];
   }
 };
 
@@ -208,4 +226,10 @@ function initClock() {
   updateClock();
   window.setInterval("updateClock()", 1);
 }
-initClock();
+
+
+// <button class="button" onclick="popup()">new Tab</button>
+// initClock();
+// function popup() {
+//   window.open("work.php", "work", "width=800,height=500");
+// }
