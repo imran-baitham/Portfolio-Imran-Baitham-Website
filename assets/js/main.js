@@ -219,7 +219,7 @@ const updateClock = () => {
   ];
   const values = [week[dname], months[mo], dnum + "th"];
   for (let i = 0; i < ids.length; i++) {
-    document.getElementById(ids[i]).firstChild.nodeValue = values[i];
+    // document.getElementById(ids[i]).firstChild.nodeValue = values[i];
   }
 };
 
@@ -233,3 +233,12 @@ initClock();
 // function popup() {
 //   window.open("work.php", "work", "width=800,height=500");
 // }
+
+let themeButtons = document.querySelectorAll(".theme__buttons");
+
+themeButtons.forEach((colors) => {
+  colors.addEventListener("click", () => {
+    let dataColor = colors.getAttribute("data-color")
+    document.querySelector(":root").style.setProperty("--first-hue",dataColor)
+  });
+});

@@ -1125,6 +1125,9 @@ header {
   border-radius: 10px;
   font-weight: var(--font-medium);
 }
+.theme__buttons{
+  border-radius: 10px;
+}
 .theme_close {
   position: absolute;
   top: 1.5rem;
