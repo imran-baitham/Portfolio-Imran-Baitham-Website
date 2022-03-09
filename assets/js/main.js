@@ -174,6 +174,7 @@ themeButton.addEventListener("click", () => {
 // ================== Live Date ===========================
 const updateClock = () => {
   let now = new Date();
+
   let dname = now.getDay(),
     mo = now.getMonth(),
     dnum = now.getDate(),
@@ -200,11 +201,11 @@ const updateClock = () => {
   const week = [
     "Sunday",
     "Monday",
-    "Tueday",
-    "Wedday",
+    "Tuesday",
+    "Wednesday",
     "Thursday",
     "Friday",
-    "Satday",
+    "Saturday",
   ];
   const ids = [
     "dayname",
@@ -226,10 +227,9 @@ function initClock() {
   updateClock();
   window.setInterval("updateClock()", 1);
 }
-
+initClock();
 
 // <button class="button" onclick="popup()">new Tab</button>
-// initClock();
 // function popup() {
 //   window.open("work.php", "work", "width=800,height=500");
 // }
