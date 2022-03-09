@@ -1117,8 +1117,7 @@ header {
 }
 .theme__model-icon {
   font-size: 1.5rem;
-  color: red;
-  border: 1px solid red;
+  color: white;
   cursor: pointer;
   transform: 0.3s;
   padding: 5px;
