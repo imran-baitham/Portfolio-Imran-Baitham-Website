@@ -937,15 +937,10 @@ header {
     margin: 0% auto;
   }
   .theme__modal-contant {
+    top: 20%;
     width: 500px;
     padding: 4.5rem 2.5rem 2.5rem;
-  }
-  .theme_close {
-    width: 88%;
-    text-align: right;
-  }
-  .theme__model-discrip {
-    justify-content: center;
+    margin: 0% auto;
   }
   .work__container {
     justify-content: center;
@@ -1080,9 +1075,10 @@ header {
 .theme__model {
   position: fixed;
   height: 100vh;
+  width: 100%;
   inset: 0;
   background-color: hsla(var(--second-hue), 28%, 16%, 0.7);
-  padding: 23rem 1rem;
+  padding: 0rem 1rem;
   display: none;
   place-items: center;
   transition: 0.4s;
@@ -1091,6 +1087,7 @@ header {
 }
 .theme__modal-contant {
   position: relative;
+  top: 45%;
   animation: theme 0.1s linear alternate;
   background-color: var(--body-color);
   padding: 4.5rem 1.5rem 2.5rem;
