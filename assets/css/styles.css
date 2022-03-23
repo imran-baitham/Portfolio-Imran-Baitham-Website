@@ -1128,7 +1128,11 @@ header {
 }
 .theme__modal-contant {
   position: relative;
+<<<<<<< HEAD
   top: 30%;
+=======
+  /* top: 30%; */
+>>>>>>> 968650ca6e4bd030973e815cdc49d35ded7784f8
   animation: theme 0.1s linear alternate;
   background-color: var(--body-color);
   padding: 4.5rem 1.5rem 2.5rem;
@@ -1179,6 +1183,7 @@ header {
   cursor: pointer;
   width: 88%;
   text-align: right;
+  /* font-weight: bold; */
 }
 .btn {
   width: 100%;
