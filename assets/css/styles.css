@@ -22,10 +22,10 @@
         background-color: rgb(0, 30, 60);
 
         /* background    #1b1d21 */
-        /* div background #0f1117 */
-        /*  */
-        /*  */
-  /* */ 
+  /* div background #0f1117 */
+  /*  */
+  /*  */
+  /* */
 
   --first-hue: 356;
   --sat: 63%;
@@ -810,6 +810,7 @@ header {
 /*=============== FOOTER ===============*/
 .footer {
   background-color: var(--first-color);
+  border-radius: 15px;
 }
 .footer__container {
   padding: 2rem 0 6rem;
@@ -826,7 +827,7 @@ header {
   line-height: 10px;
   text-align: center;
   margin-bottom: 1.5rem;
-  color: var(--first-hue);
+  color: black;
 }
 .footer__list {
   margin-bottom: 2rem;
