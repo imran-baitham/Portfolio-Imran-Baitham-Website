@@ -12,6 +12,7 @@ closetheme.addEventListener("click", () => {
 function cloaseColors(params) {
   document.querySelector(".theme__model").style.display = "none";
 }
+
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 const scrollHeader = () => {
   const header = document.getElementById("header");
@@ -84,6 +85,16 @@ let swiperTestimonial = new Swiper(".testimonial__container", {
   loop: true,
   grabCursor: true,
 
+  rewind: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -99,6 +110,15 @@ let swiperTestimonial = new Swiper(".testimonial__container", {
     },
   },
 });
+
+
+// let swiper = new Swiper(".mySwiper", {
+//   rewind: true,
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+// });
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
@@ -241,6 +261,20 @@ function initClock() {
   window.setInterval("updateClock()", 1);
 }
 initClock();
+
+// =================  Navbar tabs  =====================
+// const scrollNavbar = () => {
+//   const header = document.querySelector(".nav__menu");
+//   setTimeout(() => {
+//     if (this.scrollY >= 4380) {
+//       console.log(this.scrollY);
+//       header.style.display = "none";
+//     } else {
+//       header.style.display = "block";
+//     }
+//   }, 60000);
+// };
+// window.addEventListener("scroll", scrollNavbar);
 
 // <button class="button" onclick="popup()">new Tab</button>
 // function popup() {

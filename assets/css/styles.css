@@ -27,7 +27,7 @@
   /*  */
   /* */
 
-  --first-hue: 356;
+  --first-hue: 420;
   --sat: 63%;
   --lig: 62%;
   --second-hue: 219;
@@ -848,6 +848,10 @@ header {
   border-radius: 0.25rem;
   font-size: var(--h1-font-size);
   display: inline-flex;
+  border: 1px solid rgb(0, 0, 0);
+}
+.footer__social-link:hover {
+  color: black;
 }
 .footer__copy {
   display: block;
