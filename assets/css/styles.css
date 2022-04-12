@@ -372,7 +372,7 @@ header {
   margin-bottom: 2.5rem;
 }
 .home__img {
-  width: 160px;
+  width: 100%;
 }
 .home__name {
   font-size: var(--biggest-font-size);
@@ -388,7 +388,8 @@ header {
   );
   border-radius: 10rem 10rem 1rem 1rem;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  /* align-items: flex-end; */
   justify-content: center;
   overflow: hidden;
 }
@@ -1040,7 +1041,7 @@ header {
     height: 400px;
   }
   .home__img {
-    width: 220px;
+    /* height: 55vh; */
   }
   .home_social-link {
     /* shuk */
